@@ -124,9 +124,9 @@ CHANGE BACK before flashing
 
         Fun {
             bindings = <
-&kp LEFT_BRACKET  &kp C_MUTE  &kp C_PLAY  &kp RIGHT_BRACKET  &key_repeat  &trans     &kp F7  &kp F8   &kp F9        &kp F12       &kp LEFT_GUI  &kp LEFT_ALT
-&kp LCTRL         &kp LSHFT   &gresc      &trans             &kp F4       &kp F5     &kp F6  &kp F11  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-&bt BT_SEL 4      &trans      &kp F1      &kp F2             &kp F3       &kp F10    &trans  &trans   &trans        &trans        &trans        &trans
+&kp LEFT_BRACKET  &kp C_MUTE  &kp C_PLAY   &kp RIGHT_BRACKET  &kp F   &trans     &kp F7  &kp F8   &kp F9        &kp F12       &kp LEFT_GUI  &kp LEFT_ALT
+&kp LCTRL         &kp LSHFT   &key_repeat  &trans             &kp F4  &kp F5     &kp F6  &kp F11  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+&bt BT_SEL 4      &trans      &kp F1       &kp F2             &kp F3  &kp F10    &trans  &trans   &trans        &trans        &trans        &trans
             >;
         };
     };
