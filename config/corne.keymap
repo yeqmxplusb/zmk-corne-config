@@ -59,7 +59,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <400>;
             flavor = "tap-preferred";
         };
 
@@ -69,8 +69,8 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <500>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <600>;
+            flavor = "hold-preferred";
         };
     };
 
