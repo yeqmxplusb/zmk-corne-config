@@ -11,10 +11,8 @@
 //#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
 / {
-    //chosen { zmk,matrix-transform = &five_column_transform; };
-    chosen {
-        zmk,physical-layout = &foostan_corne_5col_layout;
-    };
+    chosen { zmk,matrix-transform = &five_column_transform; };
+    //chosen { zmk,physical-layout = &foostan_corne_5col_layout; };
 
     behaviors {
         hml: home_row_mod_left {
