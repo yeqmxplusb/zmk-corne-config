@@ -16,7 +16,7 @@
 
     five_column_transform: transform_0 {
         compatible = "zmk,matrix-transform";
-        columns = <6>; // Adjust based on your actual keyboard layout
+        columns = <5>; // Adjust based on your actual keyboard layout
     };
 
     chosen {
