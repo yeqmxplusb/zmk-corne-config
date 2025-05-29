@@ -25,7 +25,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <5 15 25 33 34 35 26 16 6 7 17 27 28 18 8 9 19 29 23 1 3 21 32>; // List of keys on the right side of the keyboard
+            hold-trigger-key-positions = <5 15 25 33 34 35 26 16 6 7 17 27 28 18 8 9 19 29 32>; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
 
@@ -71,6 +71,20 @@
             tapping-term-ms = <440>;
             flavor = "tap-preferred";
         };
+
+        hml_lctl: hml_lctl {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <5 15 25 33 34 35 26 16 6 7 17 27 28 18 8 9 19 29 23 1 3 21 32>;
+            hold-trigger-on-release;
+            label = "HML_LCTL";
+        };
     };
 
     keymap {
@@ -78,9 +92,9 @@
 
         Base {
             bindings = <
-&mt_slow GRAVE Q  &kp W              &kp E    &kp R                 &kp T               &kp Y                         &kp U             &kp I                &kp O              &kp P        &hml LEFT_GUI A       &hml LEFT_ALT S
-&hml LCTRL D      &hml LEFT_SHIFT F  &lt 2 G  &lt 1 H               &hmr RSHIFT J       &hmr RCTRL K                  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMI  &kp Z              &kp X        &kp C                 &kp V
-&kp B             &kp N              &kp M    &mt_slow EQUAL COMMA  &mt_slow MINUS DOT  &mt_slow SINGLE_QUOTE FSLH    &kp TAB           &lt_slow 4 ENTER     &lt_slow 1 ESCAPE  &lt 2 SPACE  &lt_slow 3 BACKSPACE  &kp DEL
+&mt_slow GRAVE Q   &kp W              &kp E    &kp R                 &kp T               &kp Y                         &kp U             &kp I                &kp O              &kp P        &hml LEFT_GUI A       &hml LEFT_ALT S
+&hml_lctl LCTRL D  &hml LEFT_SHIFT F  &lt 2 G  &lt 1 H               &hmr RSHIFT J       &hmr RCTRL K                  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMI  &kp Z              &kp X        &kp C                 &kp V
+&kp B              &kp N              &kp M    &mt_slow EQUAL COMMA  &mt_slow MINUS DOT  &mt_slow SINGLE_QUOTE FSLH    &kp TAB           &lt_slow 4 ENTER     &lt_slow 1 ESCAPE  &lt 2 SPACE  &lt_slow 3 BACKSPACE  &kp DEL
             >;
         };
 
