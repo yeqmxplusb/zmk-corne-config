@@ -109,9 +109,9 @@
 
         Nav {
             bindings = <
-&trans     &trans     &trans     &trans     &trans    &kp LC(R)    &kp LC(C)  &kp LC(V)  &kp LC(X)  &kp LC(Z)  &kp LGUI  &kp LALT
-&kp LCTRL  &kp LSHFT  &trans     &kp LEFT   &kp DOWN  &kp UP       &kp RIGHT  &kp RET    &trans     &trans     &trans    &trans
-&trans     &kp HOME   &kp PG_UP  &kp PG_DN  &kp END   &kp INS      &trans     &trans     &trans     &trans     &trans    &trans
+&trans     &trans     &trans     &trans     &trans    &kp C_AC_BACK    &kp LC(R)  &kp LC(Z)  &kp C_AC_FORWARD  &kp LC(C_AC_REFRESH)  &kp LGUI  &kp LALT
+&kp LCTRL  &kp LSHFT  &trans     &kp LEFT   &kp DOWN  &kp UP           &kp RIGHT  &kp RET    &trans            &trans                &trans    &trans
+&trans     &kp HOME   &kp PG_UP  &kp PG_DN  &kp END   &kp INS          &trans     &trans     &trans            &trans                &trans    &trans
             >;
         };
 
